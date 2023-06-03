@@ -1,0 +1,83 @@
+body{
+    margin: 0px;
+}
+
+#home{
+    margin: auto;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+}
+
+.heading{
+    border: 1px solid black;
+    margin: 10px 0px 15px 0px ;
+    display: flex;
+}
+
+#page-heading{
+    font-size: 2.4rem;
+    text-align: center;
+    color: rgb(18, 17, 17);
+    letter-spacing: 0.1cm;
+    word-spacing: 0.4cm;
+}
+
+.common-style{
+    font-size: 1.4rem;
+    margin: 2px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    border: 1px solid black;
+    
+    
+}
+
+.delete-icon{
+    border: 1px solid black;
+    width: 18%;
+    display: flex;
+    font-size: 1.9rem;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+
+.show-data{
+    /* width: 100%; */
+    display: flex;
+    /* justify-content: space-between; */
+    /* flex-wrap: wrap; */
+    border: 1px solid black;
+    margin: 2px 0px 2px 0px;
+    background-color: rgb(217, 134, 18);
+    
+    
+    
+}
+
+.show-data:hover{
+    background-color: rgb(61, 62, 62);
+}
+
+#form{
+    margin: 20px 0px -15px 0px;
+}
+
+.style-button{
+    font-size: 0.8rem;
+    color: white;
+    margin: 0px 0px 0px 6px;
+    background-color: rgb(39, 38, 38);
+}
+
+
+
+
+

@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <title><%= titlegiven %></title>
+    <link rel="stylesheet" href="/css/home.css" />
+    <script
+      src="https://kit.fontawesome.com/caacf51c56.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="home">
+      <div class="heading">
+        <i
+          class="fa-solid fa-address-book"
+          style="font-size: 3rem; margin: 15px 18px 0px 20px"
+        ></i>
+        <h1 id="page-heading">My Contact List</h1>
+      </div>
+
+      <% for ( let i of contact_list ) { %>
+      <div class="show-data">
+        <div class="common-style">
+          <p><%= i.name%></p>
+          <p><%= i.phone%></p>
+        </div>
+        <div class="delete-icon">
+          <a href="/delete-contact/?id=<%= i._id %>">
+            <i class="fa-sharp fa-solid fa-trash"></i>
+          </a>
+        </div>
+        <!-- <div class="common-style"><%= i.name %></div>
+        <div class="common-style"><%= i.age %></div> -->
+      </div>
+      <% } %>
+      <div id="form">
+        <form action="create-contact" method="post">
+          <input
+            type="text"
+            name="name"
+            placeholder="Enter name"
+            required
+            class="common-input"
+          />
+          <input
+            type="number"
+            name="phone"
+            placeholder="Enter Contact No."
+            required
+            class="common-input"
+          />
+
+          <button type="submit" class="style-button">Add to Contact</button>
+        </form>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="/js/home.js"></script>
+  </body>
+</html>
